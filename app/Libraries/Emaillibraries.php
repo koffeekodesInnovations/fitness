@@ -18,18 +18,19 @@ class Emaillibraries
         $email_content .= '<h3>Contact Email: ' . $form_data['email'] . '</h3>';
         $email_content .= '<h3>Description:</h3>';
         $email_content .= '<p>' . $form_data['msg'] . '</p>';
-
-        $this->email->setTo('ashishdadhich15@gmail.com');
-        $this->email->setFrom("ashishdadhich15@gmail.com", 'Earth Mover Enterprise');
-        $this->email->setSubject('New Enquiry from Earth Mover Enterprise');
+    
+        $this->email->setTo($form_data['email']); // Set recipient to the email from form data
+        $this->email->setFrom("santu.koffeekodes@gmail.com", 'Fitness');
+        $this->email->setSubject('New Enquiry from fitness');
         $this->email->setMessage($email_content);
         $this->email->setMailType('html');
-
+    
         if ($this->email->send()) {
             return true;
         } else {
             return false;
         }
     }
+    
     
 }

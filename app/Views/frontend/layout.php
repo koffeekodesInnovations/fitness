@@ -52,7 +52,7 @@
                         <i class="material-icons">alarm_on</i>
                         <p>Mon - Fri: 6:30am - 07:45pm</p>
                     </div>
-                    <div class="header-info">
+                    <!-- <div class="header-info">
                         <i class="material-icons">language</i>
                         <select id="language" class="language-select">
                             <option data-display="Language">EN</option>
@@ -60,7 +60,7 @@
                             <option data-display="Language" value="2">JA</option>
                             <option data-display="Language" value="2">AR</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -80,8 +80,8 @@
                 <ul class="main-menu">
                     <li><a href="<?= base_url('/') ?>" class="active">Home</a></li>
                     <li><a href="<?= base_url('about') ?>">About</a></li>
+                    <li><a href="<?= base_url('services') ?>">Services</a></li>
                     <li><a href="<?= base_url('calculator') ?>">calculator</a></li>
-                  
                     <li><a href="<?= base_url('contact') ?>">Contact</a></li>
                 </ul>
             </div>
@@ -156,10 +156,10 @@
                         </div>
                     </div>
                 </div>
-                <form class="infor-form">
+                <!-- <form class="infor-form">
                     <input type="text" placeholder="Your Email">
-                    <button><img src="<?= base_url() ?>assets/img/icons/send.png" alt=""></button>
-                </form>
+                    <button><img src="<= base_url() ?>assets/img/icons/send.png" alt=""></button>
+                </form> -->
                 <div class="insta-social">
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>

@@ -27,15 +27,11 @@ class EmailController extends BaseController
                 'message' => $this->validator->getErrors(),
             ]);
         }
-    
         $form_data = $this->request->getPost();
-    
         // Initialize the email library
         $emailLib = new Emaillibraries();
-    
         // Send email
         $emailSent = $emailLib->send_mail($form_data);
-    
         if ($emailSent) {
             return $this->response->setJSON(['success' => true, 'message' => 'Message submitted successfully!']);
         } else {

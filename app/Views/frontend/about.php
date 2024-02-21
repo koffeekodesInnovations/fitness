@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-lg-7 m-auto text-white">
 				<h2>About</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 			</div>
 		</div>
 	</div>

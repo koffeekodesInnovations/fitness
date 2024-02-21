@@ -51,15 +51,15 @@
 				<form class="singup-form contact-form" action="javascript:void(0);" method="post" id="contactusfrom">
 					<div class="row">
 						<div class="col-md-6">
-							<input type="text" placeholder="First Name"  name="name">
+							<input type="text" placeholder="First Name" name="name">
 						</div>
 						<div class="col-md-6">
-							<input  type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="pnumber" placeholder="Phone No.">
+							<input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="pnumber" placeholder="Phone No.">
 						</div>
 						<div class="col-md-12">
-							<input type="text" placeholder="Your Email"  name="email">
+							<input type="text" placeholder="Your Email" name="email">
 						</div>
-						
+
 						<div class="col-md-12">
 							<textarea placeholder="Message" name="msg"></textarea>
 							<a href="#" id="send-message-btn" class="site-btn sb-gradient">Send message</a>
@@ -74,7 +74,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+<!-- <script>
 $(document).ready(function() {
     // Add click event handler to the "Send message" button
     $("#send-message-btn").click(function(e) {
@@ -103,6 +103,46 @@ $(document).ready(function() {
     });
 });
 
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+	$(document).ready(function() {
+		// Add click event handler to the "Send message" button
+		$("#send-message-btn").click(function(e) {
+			e.preventDefault(); // Prevent default form submission
+
+			// Serialize form data
+			var formData = $("#contactusfrom").serialize();
+
+			// Make AJAX request to send email
+			$.ajax({
+				url: "<?php echo base_url('send-mail'); ?>", // Correct endpoint
+				type: "POST",
+				dataType: "json",
+				data: formData, // Pass serialized form data
+				success: function(response) {
+					if (response.success) {
+						Swal.fire({
+							title: "success",
+							text: "Email sent successfully",
+							icon: "success"
+						});
+					} else {
+						Swal.fire({
+							title: "error",
+							text: "Error sending email:",
+							icon: "error"
+						});
+					}
+				},
+				error: function(xhr, status, error) {
+					// SweetAlert for AJAX error
+					swal("Error", "AJAX Error: " + xhr.responseText, "error");
+				}
+			});
+		});
+	});
 </script>
 
 <?= $this->endSection() ?>
