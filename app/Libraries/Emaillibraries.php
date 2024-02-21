@@ -19,8 +19,8 @@ class Emaillibraries
         $email_content .= '<h3>Description:</h3>';
         $email_content .= '<p>' . $form_data['msg'] . '</p>';
     
-        $this->email->setTo($form_data['email']); // Set recipient to the email from form data
-        $this->email->setFrom("santu.koffeekodes@gmail.com", 'Fitness');
+        $this->email->setFrom($form_data['email']); 
+        $this->email->setTo("santu.koffeekodes@gmail.com", 'Fitness');
         $this->email->setSubject('New Enquiry from fitness');
         $this->email->setMessage($email_content);
         $this->email->setMailType('html');
