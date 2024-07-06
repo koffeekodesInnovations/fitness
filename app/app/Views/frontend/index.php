@@ -66,9 +66,7 @@
 <section class="about-section spad">
     <div class="container">
         <div class="section-title text-center">
-            <img src="<?= base_url() ?>assets/img/icons/logo-icon.png" alt="">
             <h2>Everything You Need to Lose Weight in One Place</h2>
-            <!-- <p>Practice Yoga to perfect physical beauty, take care of your soul and enjoy life more fully!</p> -->
         </div>
         <div class="row">
             <div class="col-lg-6">

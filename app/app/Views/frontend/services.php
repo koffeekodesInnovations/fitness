@@ -7,7 +7,6 @@
 		<div class="row">
 			<div class="col-lg-7 m-auto text-white">
 				<h2>Services</h2>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 			</div>
 		</div>
 	</div>
@@ -18,12 +17,54 @@
 <section class="service-section spad">
 	<div class="container ">
 		<div class="section-title text-center">
-			<img src="<?= base_url() ?>assets/img/icons/logo-icon.png" alt="">
 			<h2>Services</h2>
 		</div>
+	
 		<p>
 			If you could do it on your own, You would have done it by now
 			wt mngt, wt gain, wt lose, dietician, aerobics exercise for ladies, private aerobics class, passive exercise, diet plan for wt lose, wt gain, kidney disease, heart dis, epilepsy(ketogenic diet), asthma, thyroid, migraine, gastric problems like diarrhorea, constipation, nausea, vomiting, hepatitis, jaundice, other liver disease,
+		</p>
+		<p>
+		At our facility, we specialize in providing comprehensive weight loss solutions that prioritize natural dietary interventions and incorporate the use of Electrical Muscle Stimulation (EMS) technology. Our approach is grounded in evidence-based practices and tailored to individual needs, aiming to achieve sustainable weight management and improved overall health.
+		</p>
+		<h6>Natural Diet Therapy : </h6>
+		<p>
+		Our emphasis on natural diet therapy underscores the importance of nurturing the body with wholesome, nutrient-rich foods. By customizing dietary plans to align with each client's unique nutritional requirements and preferences, we empower individuals to make long-term lifestyle changes that support their weight loss goals.
+		</p>
+		<h4> ~ Natural Diet Therapy</h4>
+		<p>
+		Our diet therapy promotes a balanced intake of essential nutrients, including vitamins, minerals, fiber, and macronutrients, to optimize metabolic function and enhance satiety.
+		</p>
+		<h4> ~ Whole Foods Emphasis</h4>
+		<p>
+		We advocate for the consumption of whole, unprocessed foods, which provide greater nutritional value and support digestive health compared to processed alternatives.
+		</p>
+		<h4> ~ Behavioral Support</h4>
+		<p>
+		In addition to meal planning, our diet therapy services encompass behavioral counseling and education, fostering sustainable habits that promote mindful eating, portion control, and healthy food choices.
+		</p>
+		<h6>Electrical Muscle Stimulation (EMS) : </h6>
+		<p>
+		As a complementary component of our weight loss program, EMS technology offers unique benefits for enhancing muscle activation and facilitating fat loss.
+		</p>
+		<h4> ~ Muscle Toning</h4>
+		<p>
+		EMS stimulates muscle contractions through electrical impulses, promoting muscle engagement and toning. This can contribute to improved muscle definition and metabolic efficiency, facilitating a leaner physique.
+		</p>
+		<h4> ~ Calorie Expenditure</h4>
+		<p>
+		While EMS alone may not induce substantial calorie burn, when integrated with regular exercise, it can augment energy expenditure and enhance the effectiveness of workouts, potentially accelerating weight loss outcomes.
+		</p>
+		<h4> ~ Targeted Training</h4>
+		<p>
+		EMS allows for targeted activation of specific muscle groups, enabling individuals to address areas of concern and achieve balanced muscular development.
+		</p>
+		<h4> ~ Recovery Enhancement</h4>
+		<p>
+		EMS technology may also aid in post-exercise recovery by reducing muscle soreness and promoting circulation, facilitating quicker recovery between workouts and optimizing training frequency.
+		</p>
+		<p>
+		By combining natural diet therapy with the strategic implementation of EMS technology, we offer a holistic approach to weight loss that addresses both dietary habits and physical conditioning. Our integrated methodology prioritizes sustainable lifestyle changes, empowering individuals to achieve their weight loss goals while promoting overall well-being and vitality.
 		</p>
 		<h2>Passive Activity Patterns</h2>
 		<p>
@@ -78,7 +119,7 @@
 	</div>
 	</div>
 </section>
-<!-- Service Section end -->
+<!-- Service Section end ->
 
 
 
